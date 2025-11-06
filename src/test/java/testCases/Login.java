@@ -28,7 +28,7 @@ public class Login extends Base{
 	
 	@Test(priority = 1)
 	public void tc_lf_001() {
-		lp.enterCredentialsAndLogin(prop.getProperty("validEmail"), prop.getProperty("validPasswor"));
+		lp.enterCredentialsAndLogin(prop.getProperty("validEmail"), prop.getProperty("validPassword"));
 		Assert.assertTrue(ap.verifyAccountPage(), "Not navigated to account page (Invalid Credentials)");
 	}
 	

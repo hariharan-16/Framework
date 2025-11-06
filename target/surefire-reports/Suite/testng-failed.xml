@@ -8,10 +8,8 @@
     <classes>
       <class name="testCases.Login">
         <methods>
-          <include name="tc_lf_002"/>
-          <include name="tc_lf_001HDD"/>
-          <include name="setUp"/>
           <include name="tc_lf_001"/>
+          <include name="setUp"/>
           <include name="close"/>
         </methods>
       </class> <!-- testCases.Login -->

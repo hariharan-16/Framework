@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">06/11/2025 10:54:41</span></a>
+<a href="#"><span class="badge badge-primary">06/11/2025 12:13:13</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -71,7 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,25 +74,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">tc_lf_001</p>
             <p class="text-sm">
-              <span>10:54:56 am</span> / <span>00:00:00:009</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>12:13:16 pm</span> / <span>00:00:00:943</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">tc_lf_001</h5>
-<span class='badge badge-success'>11.06.2025 10:54:56 am</span>
-<span class='badge badge-danger'>11.06.2025 10:54:56 am</span>
-<span class='badge badge-default'>00:00:00:009</span>
+<h5 class="test-status text-pass">tc_lf_001</h5>
+<span class='badge badge-success'>11.06.2025 12:13:16 pm</span>
+<span class='badge badge-danger'>11.06.2025 12:13:17 pm</span>
+<span class='badge badge-default'>00:00:00:943</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -110,85 +105,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:54:56 am</td>
+        <td>12:13:16 pm</td>
         <td>
           Execution started.
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:54:56 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:13:17 pm</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=142.0.7444.60)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6766388498c66ebc2eedbbee9b3e53cb, clickElement {id=f.FFE35B70A594203901DA5F4B2C1AB482.d.0DB9CC3C48924C09667C5EDE00E9E443.e.38}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55186}, goog:processID: 16972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55186/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6766388498c66ebc2eedbbee9b3e53cb)] -> xpath: //span[text() = 'My Account']]
-Session ID: 6766388498c66ebc2eedbbee9b3e53cb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at pages.HomePage.goToLoginPage(HomePage.java:24)
-	at testCases.Login.setUp(Login.java:58)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>10:54:56 am</td>
-        <td>
-          Execution skipped
+          tc_lf_001 execution passed
         </td>
       </tr>
   </tbody>
@@ -196,25 +122,25 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">tc_lf_002</p>
             <p class="text-sm">
-              <span>10:54:56 am</span> / <span>00:00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>12:13:19 pm</span> / <span>00:00:00:704</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">tc_lf_002</h5>
-<span class='badge badge-success'>11.06.2025 10:54:56 am</span>
-<span class='badge badge-danger'>11.06.2025 10:54:56 am</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<h5 class="test-status text-pass">tc_lf_002</h5>
+<span class='badge badge-success'>11.06.2025 12:13:19 pm</span>
+<span class='badge badge-danger'>11.06.2025 12:13:20 pm</span>
+<span class='badge badge-default'>00:00:00:704</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -227,85 +153,16 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:54:56 am</td>
+        <td>12:13:19 pm</td>
         <td>
           Execution started.
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:54:56 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:13:20 pm</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=142.0.7444.60)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6766388498c66ebc2eedbbee9b3e53cb, clickElement {id=f.FFE35B70A594203901DA5F4B2C1AB482.d.0DB9CC3C48924C09667C5EDE00E9E443.e.38}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55186}, goog:processID: 16972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55186/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6766388498c66ebc2eedbbee9b3e53cb)] -> xpath: //span[text() = 'My Account']]
-Session ID: 6766388498c66ebc2eedbbee9b3e53cb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at pages.HomePage.goToLoginPage(HomePage.java:24)
-	at testCases.Login.setUp(Login.java:58)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>10:54:56 am</td>
-        <td>
-          Execution skipped
+          tc_lf_002 execution passed
         </td>
       </tr>
   </tbody>
@@ -313,25 +170,25 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="3"
+        <li class="test-item"  status="pass" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">tc_lf_001HDD</p>
             <p class="text-sm">
-              <span>10:54:57 am</span> / <span>00:00:00:000</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>12:13:22 pm</span> / <span>00:00:00:151</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">tc_lf_001HDD</h5>
-<span class='badge badge-success'>11.06.2025 10:54:57 am</span>
-<span class='badge badge-danger'>11.06.2025 10:54:57 am</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-pass">tc_lf_001HDD</h5>
+<span class='badge badge-success'>11.06.2025 12:13:22 pm</span>
+<span class='badge badge-danger'>11.06.2025 12:13:22 pm</span>
+<span class='badge badge-default'>00:00:00:151</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -344,85 +201,16 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:54:57 am</td>
+        <td>12:13:22 pm</td>
         <td>
           Execution started.
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:54:57 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:13:22 pm</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=142.0.7444.60)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6766388498c66ebc2eedbbee9b3e53cb, clickElement {id=f.FFE35B70A594203901DA5F4B2C1AB482.d.0DB9CC3C48924C09667C5EDE00E9E443.e.38}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55186}, goog:processID: 16972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55186/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6766388498c66ebc2eedbbee9b3e53cb)] -> xpath: //span[text() = 'My Account']]
-Session ID: 6766388498c66ebc2eedbbee9b3e53cb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at pages.HomePage.goToLoginPage(HomePage.java:24)
-	at testCases.Login.setUp(Login.java:58)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>10:54:57 am</td>
-        <td>
-          Execution skipped
+          tc_lf_001HDD execution passed
         </td>
       </tr>
   </tbody>
@@ -430,25 +218,25 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="4"
+        <li class="test-item"  status="pass" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">tc_lf_001HDD</p>
             <p class="text-sm">
-              <span>10:54:57 am</span> / <span>00:00:00:000</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>12:13:23 pm</span> / <span>00:00:00:740</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">tc_lf_001HDD</h5>
-<span class='badge badge-success'>11.06.2025 10:54:57 am</span>
-<span class='badge badge-danger'>11.06.2025 10:54:57 am</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-pass">tc_lf_001HDD</h5>
+<span class='badge badge-success'>11.06.2025 12:13:23 pm</span>
+<span class='badge badge-danger'>11.06.2025 12:13:24 pm</span>
+<span class='badge badge-default'>00:00:00:740</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -461,85 +249,16 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:54:57 am</td>
+        <td>12:13:23 pm</td>
         <td>
           Execution started.
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:54:57 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:13:24 pm</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=142.0.7444.60)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6766388498c66ebc2eedbbee9b3e53cb, clickElement {id=f.FFE35B70A594203901DA5F4B2C1AB482.d.0DB9CC3C48924C09667C5EDE00E9E443.e.38}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55186}, goog:processID: 16972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55186/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6766388498c66ebc2eedbbee9b3e53cb)] -> xpath: //span[text() = 'My Account']]
-Session ID: 6766388498c66ebc2eedbbee9b3e53cb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at pages.HomePage.goToLoginPage(HomePage.java:24)
-	at testCases.Login.setUp(Login.java:58)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>10:54:57 am</td>
-        <td>
-          Execution skipped
+          tc_lf_001HDD execution passed
         </td>
       </tr>
   </tbody>
@@ -547,25 +266,25 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="5"
+        <li class="test-item"  status="pass" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">tc_lf_001HDD</p>
             <p class="text-sm">
-              <span>10:54:57 am</span> / <span>00:00:00:002</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>12:13:26 pm</span> / <span>00:00:00:270</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">tc_lf_001HDD</h5>
-<span class='badge badge-success'>11.06.2025 10:54:57 am</span>
-<span class='badge badge-danger'>11.06.2025 10:54:57 am</span>
-<span class='badge badge-default'>00:00:00:002</span>
+<h5 class="test-status text-pass">tc_lf_001HDD</h5>
+<span class='badge badge-success'>11.06.2025 12:13:26 pm</span>
+<span class='badge badge-danger'>11.06.2025 12:13:26 pm</span>
+<span class='badge badge-default'>00:00:00:270</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -578,90 +297,21 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:54:57 am</td>
+        <td>12:13:26 pm</td>
         <td>
           Execution started.
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:54:57 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:13:26 pm</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=142.0.7444.60)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6766388498c66ebc2eedbbee9b3e53cb, clickElement {id=f.FFE35B70A594203901DA5F4B2C1AB482.d.0DB9CC3C48924C09667C5EDE00E9E443.e.38}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55186}, goog:processID: 16972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55186/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6766388498c66ebc2eedbbee9b3e53cb)] -> xpath: //span[text() = 'My Account']]
-Session ID: 6766388498c66ebc2eedbbee9b3e53cb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at pages.HomePage.goToLoginPage(HomePage.java:24)
-	at testCases.Login.setUp(Login.java:58)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>10:54:57 am</td>
-        <td>
-          Execution skipped
+          tc_lf_001HDD execution passed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:54:57 am</td>
+        <td>12:13:26 pm</td>
         <td>
           Execution finished
         </td>
@@ -680,101 +330,24 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-skip'>5</span>
-</span>
-<p class="name">org.openqa.selenium.ElementNotInteractableException</p>
-<p class="duration text-sm">5 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.ElementNotInteractableException</h4>
-<span status="skip" class='badge log badge-skip'>5 skipped</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>10:54:56 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>tc_lf_001</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>10:54:56 am</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>tc_lf_002</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>10:54:57 am</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>tc_lf_001HDD</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>10:54:57 am</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>tc_lf_001HDD</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>10:54:57 am</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>tc_lf_001HDD</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="container-fluid p-4 view dashboard-view">
+<div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>06/11/2025 10:54:41</h3>
+<h3>06/11/2025 12:13:13</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>06/11/2025 10:54:57</h3>
+<h3>06/11/2025 12:13:26</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>5</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -796,13 +369,13 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='100%'>
+<b>5</b> tests passed
 </small>
 </div>
 <div>
 <small data-tooltip='0%'><b>0</b> tests failed,
-<b>5</b> skipped, <b data-tooltip='0%'>0</b> others
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -819,10 +392,10 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='45%'><b>5</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>16</b> others
+<b data-tooltip='%'>6</b> others
 </small>
 </div>
 </div>
@@ -838,7 +411,7 @@ Session ID: 6766388498c66ebc2eedbbee9b3e53cb
 </div></div>
 <script>
 var timeline = {
-"tc_lf_001":0.009,"tc_lf_002":0.001,"tc_lf_001HDD":0,"tc_lf_001HDD":0,"tc_lf_001HDD":0.002
+"tc_lf_001":0.943,"tc_lf_002":0.704,"tc_lf_001HDD":0.151,"tc_lf_001HDD":0.74,"tc_lf_001HDD":0.27
 };
 </script>
 <div class="row">
@@ -870,7 +443,7 @@ var timeline = {
 </tr>
 <tr>
 <td>Username</td>
-<td>DESKTOP-F2FBM12$</td>
+<td>hari</td>
 </tr>
 <tr>
 <td>Java version</td>
@@ -885,10 +458,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
+passParent: 5,
 failParent: 0,
 warningParent: 0,
-skipParent: 5,
+skipParent: 0,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -902,11 +475,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
+passEvents: 5,
 failEvents: 0,
 warningEvents: 0,
-skipEvents: 5,
-infoEvents: 11
+skipEvents: 0,
+infoEvents: 6
 };
 </script>        </div>
       </div>
