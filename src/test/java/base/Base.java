@@ -25,6 +25,9 @@ public class Base {
 	}
 	
 	public WebDriver initializeBrowser(String browser) throws IOException {
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriverManager.edgedriver().setup();
 		if(browser.equals("chrome")) {
 			driver = new ChromeDriver();
 		}else if(browser.equals("edge")) {
