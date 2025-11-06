@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Utilities;
 
 public class Base {
@@ -24,6 +25,8 @@ public class Base {
 	}
 	
 	public WebDriver initializeBrowser(String browser) throws IOException {
+		
+		WebDriverManager.chromedriver().setup();
 		if(browser.equals("chrome")) {
 			driver = new ChromeDriver();
 		}else if(browser.equals("edge")) {
